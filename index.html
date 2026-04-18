@@ -74,9 +74,18 @@
     <h2>Evolución histórica del mes</h2>
     <p class="caption">Media mensual de cada contaminante en el mismo mes durante los últimos años disponibles. Línea discontinua: valor límite anual (RD 102/2011).</p>
     <div class="chart-grid">
-      <div class="chart-wrap"><h3>NO₂ (µg/m³)</h3><canvas id="chartNO2"></canvas></div>
-      <div class="chart-wrap"><h3>PM10 (µg/m³)</h3><canvas id="chartPART"></canvas></div>
-      <div class="chart-wrap"><h3>PM2.5 (µg/m³)</h3><canvas id="chartPM25"></canvas></div>
+      <div class="chart-wrap">
+        <h3>NO₂ (µg/m³)</h3>
+        <div class="canvas-holder"><canvas id="chartNO2"></canvas></div>
+      </div>
+      <div class="chart-wrap">
+        <h3>PM10 (µg/m³)</h3>
+        <div class="canvas-holder"><canvas id="chartPART"></canvas></div>
+      </div>
+      <div class="chart-wrap">
+        <h3>PM2.5 (µg/m³)</h3>
+        <div class="canvas-holder"><canvas id="chartPM25"></canvas></div>
+      </div>
     </div>
   </section>
 
@@ -102,7 +111,9 @@
   <section class="traffic-block">
     <h2>Cruce con tráfico</h2>
     <p class="caption">Intensidad Media Diaria (IMD) por carril de circulación en Granada. Fuente: <a href="http://www.movilidadgranada.com/tra_datos.php" target="_blank" rel="noopener">CGIM</a>.</p>
-    <div class="chart-wrap wide"><canvas id="chartTraffic"></canvas></div>
+    <div class="chart-wrap wide">
+      <div class="canvas-holder"><canvas id="chartTraffic"></canvas></div>
+    </div>
     <div id="trafficNote" class="caption"></div>
   </section>
 
