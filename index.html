@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informe de Calidad del Aire · Granada</title>
+  <meta name="description" content="Informe mensual de calidad del aire (NO2, PM10, PM2.5) y tráfico en la ciudad de Granada. Comparativa con los 10 años anteriores.">
+  <link rel="icon" type="image/gif" href="https://www.granada.org/escu40.gif">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+
+<header class="site-header no-print">
+  <div class="brand">
+    <img src="https://www.granada.org/escu40.gif" alt="Escudo del Ayuntamiento de Granada" class="shield">
+    <div class="brand-text">
+      <span class="brand-line1">Ayuntamiento de Granada</span>
+      <span class="brand-line2">Calidad del Aire · Informe mensual</span>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#report">Informe</a>
+    <a href="#methodology">Metodología</a>
+    <a href="#sources">Fuentes</a>
+  </nav>
+</header>
+
+<section class="controls no-print" aria-label="Controles del informe">
+  <div class="controls-inner">
+    <label>
+      <span>Mes</span>
+      <select id="monthSel"></select>
+    </label>
+    <label>
+      <span>Año</span>
+      <select id="yearSel"></select>
+    </label>
+    <label>
+      <span>Estación</span>
+      <select id="stationSel">
+        <option value="ALL">Todas (media)</option>
+        <option value="NORTE">Granada Norte</option>
+        <option value="CONGRESOS">Palacio de Congresos</option>
+      </select>
+    </label>
+    <button id="generateBtn" type="button">Generar informe</button>
+    <button id="printBtn" type="button" class="secondary">Imprimir / PDF</button>
+  </div>
+</section>
+
+<main id="report" class="report">
+
+  <section class="cover">
+    <img src="https://www.granada.org/inicio.nsf/2019calidadaire.gif" alt="Calidad del aire Ayto. Granada" class="cover-badge">
+    <h1>Informe de Calidad del Aire</h1>
+    <p class="subtitle">Ciudad de Granada</p>
+    <p class="period" id="coverPeriod">—</p>
+    <p class="cover-meta">
+      Ventana de comparación: 10 años anteriores del mismo mes.<br>
+      Fuentes: Red municipal de calidad del aire y CGIM (tráfico).
+    </p>
+  </section>
+
+  <section class="summary" id="summary" aria-label="Resumen">
+    <h2>Resumen ejecutivo</h2>
+    <div id="summaryText" class="summary-text">Seleccione mes y año y pulse «Generar informe».</div>
+  </section>
+
+  <section class="kpis" id="kpis" aria-label="Indicadores clave"></section>
+
+  <section class="chart-block">
+    <h2>Evolución histórica del mes</h2>
+    <p class="caption">Media mensual de cada contaminante en el mismo mes durante los últimos años disponibles. Línea discontinua: valor límite anual (RD 102/2011).</p>
+    <div class="chart-grid">
+      <div class="chart-wrap"><h3>NO₂ (µg/m³)</h3><canvas id="chartNO2"></canvas></div>
+      <div class="chart-wrap"><h3>PM10 (µg/m³)</h3><canvas id="chartPART"></canvas></div>
+      <div class="chart-wrap"><h3>PM2.5 (µg/m³)</h3><canvas id="chartPM25"></canvas></div>
+    </div>
+  </section>
+
+  <section class="table-block">
+    <h2>Detalle por estación</h2>
+    <div class="table-scroll">
+      <table id="detailTable" class="detail">
+        <thead>
+          <tr>
+            <th>Estación</th>
+            <th>Parámetro</th>
+            <th>Media del mes</th>
+            <th>Media 10 años (mismo mes)</th>
+            <th>Variación</th>
+            <th>Límite anual</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="traffic-block">
+    <h2>Cruce con tráfico</h2>
+    <p class="caption">Intensidad Media Diaria (IMD) por carril de circulación en Granada. Fuente: <a href="http://www.movilidadgranada.com/tra_datos.php" target="_blank" rel="noopener">CGIM</a>.</p>
+    <div class="chart-wrap wide"><canvas id="chartTraffic"></canvas></div>
+    <div id="trafficNote" class="caption"></div>
+  </section>
+
+  <section id="methodology" class="method">
+    <h2>Metodología</h2>
+    <ul>
+      <li><strong>NOx:</strong> la red municipal publica únicamente NO₂. Se utiliza NO₂ como indicador de NOx. Valor límite anual 40 µg/m³ (RD 102/2011).</li>
+      <li><strong>Partículas:</strong> PM10 (<em>PART</em> en la fuente) y PM2.5. Aunque las mediciones son horarias, se utiliza la media mensual agregada publicada por el portal.</li>
+      <li><strong>Ventana:</strong> mismo mes del año en curso frente a los 10 años anteriores; si no hay 10 años disponibles se usa el histórico máximo posible.</li>
+      <li><strong>Estaciones:</strong> Granada Norte y Palacio de Congresos. La fila «Media Granada» promedia las estaciones cuando ambas tienen datos.</li>
+      <li><strong>Tráfico:</strong> IMD anual por carril, a escala ciudad. Se muestra para contextualizar, no como indicador del entorno inmediato de la estación.</li>
+    </ul>
+  </section>
+
+  <section id="sources" class="sources">
+    <h2>Fuentes y actualización</h2>
+    <ul>
+      <li>Calidad del aire: <a href="https://www.granada.org/inet/calidadaire.nsf" target="_blank" rel="noopener">Ayuntamiento de Granada · Red de Calidad del Aire</a>.</li>
+      <li>Tráfico: <a href="http://www.movilidadgranada.com/tra_datos.php" target="_blank" rel="noopener">CGIM · Datos de tráfico</a>.</li>
+      <li>Los datos se actualizan automáticamente el día 2 de cada mes.</li>
+    </ul>
+    <p id="dataMeta" class="caption">—</p>
+  </section>
+
+</main>
+
+<footer class="site-footer no-print">
+  <span>© Ayuntamiento de Granada · Informe generado automáticamente.</span>
+</footer>
+
+<noscript>
+  <p style="padding:20px;text-align:center">Este informe requiere JavaScript.</p>
+</noscript>
+</body>
+</html>

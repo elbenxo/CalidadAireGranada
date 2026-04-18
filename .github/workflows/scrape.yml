@@ -1,0 +1,81 @@
+name: Monthly data refresh & deploy
+
+on:
+  schedule:
+    # 06:15 UTC on the 2nd of each month (portal publishes the previous month).
+    - cron: "15 6 2 * *"
+  workflow_dispatch:
+  push:
+    branches: [main, master, "claude/granada-air-quality-reports-514BB"]
+    paths:
+      - "index.html"
+      - "css/**"
+      - "js/**"
+      - "data/**"
+      - "scripts/**"
+      - ".github/workflows/scrape.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    # Only run the full scrape on schedule / manual dispatch. The push trigger
+    # just rebuilds the site with existing data.
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install requests
+      - name: Scrape (last 11 years window)
+        run: |
+          YEAR=$(date -u +%Y)
+          FROM=$((YEAR - 11))
+          python3 scripts/scrape.py --years ${FROM}-${YEAR} --workers 3 --out data
+      - name: Commit updated data
+        id: commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/air.json data/traffic.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No data changes."
+          else
+            git commit -m "chore(data): monthly refresh $(date -u +%Y-%m-%d)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: [scrape]
+    if: always()
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

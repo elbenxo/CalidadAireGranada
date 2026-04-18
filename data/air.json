@@ -1,0 +1,1933 @@
+{
+  "meta": {
+    "scraped_at": "2026-04-18T18:13:52.658286Z",
+    "stations": [
+      "NORTE",
+      "CONGRESOS"
+    ],
+    "pollutants": [
+      "NO2",
+      "PART",
+      "PM25"
+    ]
+  },
+  "records": {
+    "NORTE|2015|01|NO2": {
+      "media": 65.3
+    },
+    "NORTE|2015|01|PART": {
+      "media": 42.81
+    },
+    "CONGRESOS|2015|01|NO2": {
+      "media": 50.75
+    },
+    "CONGRESOS|2015|01|PART": {
+      "media": 28.22
+    },
+    "NORTE|2015|02|NO2": {
+      "media": 42.83
+    },
+    "NORTE|2015|02|PART": {
+      "media": 29.08
+    },
+    "CONGRESOS|2015|02|NO2": {
+      "media": 33.71
+    },
+    "CONGRESOS|2015|02|PART": {
+      "media": 20.53
+    },
+    "NORTE|2015|03|NO2": {
+      "media": 45.95
+    },
+    "NORTE|2015|03|PART": {
+      "media": 32.72
+    },
+    "CONGRESOS|2015|03|NO2": {
+      "media": 33.36
+    },
+    "CONGRESOS|2015|03|PART": {
+      "media": 22.23
+    },
+    "NORTE|2015|04|NO2": {
+      "media": 39.13
+    },
+    "NORTE|2015|04|PART": {
+      "media": 29.17
+    },
+    "CONGRESOS|2015|04|NO2": {
+      "media": 30.99
+    },
+    "CONGRESOS|2015|04|PART": {
+      "media": 25.74
+    },
+    "NORTE|2015|05|NO2": {
+      "media": 41.63
+    },
+    "NORTE|2015|05|PART": {
+      "media": 30.37
+    },
+    "CONGRESOS|2015|05|NO2": {
+      "media": 29.11
+    },
+    "CONGRESOS|2015|05|PART": {
+      "media": 28.94
+    },
+    "NORTE|2015|06|NO2": {
+      "media": 37.74
+    },
+    "NORTE|2015|06|PART": {
+      "media": 26.92
+    },
+    "CONGRESOS|2015|06|NO2": {
+      "media": 25.3
+    },
+    "CONGRESOS|2015|06|PART": {
+      "media": 26.76
+    },
+    "NORTE|2015|07|NO2": {
+      "media": 42.56
+    },
+    "NORTE|2015|07|PART": {
+      "media": 34.53
+    },
+    "CONGRESOS|2015|07|NO2": {
+      "media": 31.31
+    },
+    "CONGRESOS|2015|07|PART": {
+      "media": 39.65
+    },
+    "NORTE|2015|08|NO2": {
+      "media": 27.34
+    },
+    "NORTE|2015|08|PART": {
+      "media": 41.83
+    },
+    "CONGRESOS|2015|08|NO2": {
+      "media": 24.07
+    },
+    "CONGRESOS|2015|08|PART": {
+      "media": 33.5
+    },
+    "NORTE|2015|09|NO2": {
+      "media": 41.22
+    },
+    "NORTE|2015|09|PART": {
+      "media": 23.98
+    },
+    "CONGRESOS|2015|09|NO2": {
+      "media": 29.52
+    },
+    "CONGRESOS|2015|09|PART": {
+      "media": 25.64
+    },
+    "NORTE|2015|10|NO2": {
+      "media": 48.01
+    },
+    "NORTE|2015|10|PART": {
+      "media": 24.3
+    },
+    "CONGRESOS|2015|10|NO2": {
+      "media": 42.09
+    },
+    "CONGRESOS|2015|10|PART": {
+      "media": 20.28
+    },
+    "NORTE|2015|11|NO2": {
+      "media": 61.9
+    },
+    "NORTE|2015|11|PART": {
+      "media": 32.26
+    },
+    "CONGRESOS|2015|11|NO2": {
+      "media": 46.31
+    },
+    "CONGRESOS|2015|11|PART": {
+      "media": 26.67
+    },
+    "NORTE|2015|12|NO2": {
+      "media": 76.6
+    },
+    "NORTE|2015|12|PART": {
+      "media": 51.04
+    },
+    "CONGRESOS|2015|12|NO2": {
+      "media": 53.75
+    },
+    "CONGRESOS|2015|12|PART": {
+      "media": 43.54
+    },
+    "NORTE|2016|01|NO2": {
+      "media": 51.53
+    },
+    "NORTE|2016|01|PART": {
+      "media": 30.17
+    },
+    "CONGRESOS|2016|01|NO2": {
+      "media": 40.25
+    },
+    "CONGRESOS|2016|01|PART": {
+      "media": 23.23
+    },
+    "NORTE|2016|02|NO2": {
+      "media": 45.92
+    },
+    "NORTE|2016|02|PART": {
+      "media": 41.98
+    },
+    "CONGRESOS|2016|02|NO2": {
+      "media": 35.54
+    },
+    "CONGRESOS|2016|02|PART": {
+      "media": 36.34
+    },
+    "NORTE|2016|03|NO2": {
+      "media": 41.71
+    },
+    "NORTE|2016|03|PART": {
+      "media": 23.3
+    },
+    "CONGRESOS|2016|03|NO2": {
+      "media": 32.4
+    },
+    "CONGRESOS|2016|03|PART": {
+      "media": 20.28
+    },
+    "NORTE|2016|04|NO2": {
+      "media": 33.57
+    },
+    "NORTE|2016|04|PART": {
+      "media": 16.54
+    },
+    "CONGRESOS|2016|04|NO2": {
+      "media": 26.56
+    },
+    "CONGRESOS|2016|04|PART": {
+      "media": 17.62
+    },
+    "NORTE|2016|05|NO2": {
+      "media": 34.68
+    },
+    "NORTE|2016|05|PART": {
+      "media": 18.61
+    },
+    "CONGRESOS|2016|05|NO2": {
+      "media": 24.91
+    },
+    "CONGRESOS|2016|05|PART": {
+      "media": 20.16
+    },
+    "NORTE|2016|06|NO2": {
+      "media": 37.74
+    },
+    "NORTE|2016|06|PART": {
+      "media": 30.75
+    },
+    "CONGRESOS|2016|06|NO2": {
+      "media": 30.77
+    },
+    "CONGRESOS|2016|06|PART": {
+      "media": 35.94
+    },
+    "NORTE|2016|07|NO2": {
+      "media": 36.29
+    },
+    "NORTE|2016|07|PART": {
+      "media": 38.99
+    },
+    "CONGRESOS|2016|07|NO2": {
+      "media": 17.91
+    },
+    "CONGRESOS|2016|07|PART": {
+      "media": 40.9
+    },
+    "NORTE|2016|08|NO2": {
+      "media": 32.73
+    },
+    "NORTE|2016|08|PART": {
+      "media": 35.24
+    },
+    "CONGRESOS|2016|08|NO2": {
+      "media": 36.16
+    },
+    "CONGRESOS|2016|08|PART": {
+      "media": 37.74
+    },
+    "NORTE|2016|09|NO2": {
+      "media": 46.38
+    },
+    "NORTE|2016|09|PART": {
+      "media": 29.63
+    },
+    "CONGRESOS|2016|09|NO2": {
+      "media": 53.69
+    },
+    "CONGRESOS|2016|09|PART": {
+      "media": 32.72
+    },
+    "NORTE|2016|10|NO2": {
+      "media": 57.77
+    },
+    "NORTE|2016|10|PART": {
+      "media": 39.59
+    },
+    "CONGRESOS|2016|10|NO2": {
+      "media": 40.91
+    },
+    "CONGRESOS|2016|10|PART": {
+      "media": 35.45
+    },
+    "NORTE|2016|11|NO2": {
+      "media": 56.01
+    },
+    "NORTE|2016|11|PART": {
+      "media": 28.83
+    },
+    "CONGRESOS|2016|11|NO2": {
+      "media": 42.27
+    },
+    "CONGRESOS|2016|11|PART": {
+      "media": 20.91
+    },
+    "NORTE|2016|12|NO2": {
+      "media": 58.09
+    },
+    "NORTE|2016|12|PART": {
+      "media": 32.46
+    },
+    "CONGRESOS|2016|12|NO2": {
+      "media": 46.45
+    },
+    "CONGRESOS|2016|12|PART": {
+      "media": 19.74
+    },
+    "NORTE|2017|01|NO2": {
+      "media": 55.98
+    },
+    "NORTE|2017|01|PART": {
+      "media": 32.48
+    },
+    "CONGRESOS|2017|01|NO2": {
+      "media": 42.95
+    },
+    "CONGRESOS|2017|01|PART": {
+      "media": 21.45
+    },
+    "NORTE|2017|02|NO2": {
+      "media": 49.56
+    },
+    "NORTE|2017|02|PART": {
+      "media": 45.11
+    },
+    "CONGRESOS|2017|02|NO2": {
+      "media": 40.5
+    },
+    "CONGRESOS|2017|02|PART": {
+      "media": 34.38
+    },
+    "NORTE|2017|03|NO2": {
+      "media": 50.46
+    },
+    "NORTE|2017|03|PART": {
+      "media": 23.98
+    },
+    "CONGRESOS|2017|03|NO2": {
+      "media": 35.78
+    },
+    "CONGRESOS|2017|03|PART": {
+      "media": 19.32
+    },
+    "NORTE|2017|04|NO2": {
+      "media": 35.46
+    },
+    "NORTE|2017|04|PART": {
+      "media": 29.3
+    },
+    "CONGRESOS|2017|04|NO2": {
+      "media": 26.54
+    },
+    "CONGRESOS|2017|04|PART": {
+      "media": 32.78
+    },
+    "NORTE|2017|05|NO2": {
+      "media": 37.84
+    },
+    "NORTE|2017|05|PART": {
+      "media": 24.48
+    },
+    "CONGRESOS|2017|05|NO2": {
+      "media": 53.98
+    },
+    "CONGRESOS|2017|05|PART": {
+      "media": 27.23
+    },
+    "NORTE|2017|06|NO2": {
+      "media": 43.78
+    },
+    "NORTE|2017|06|PART": {
+      "media": 32.43
+    },
+    "CONGRESOS|2017|06|NO2": {
+      "media": 30.64
+    },
+    "CONGRESOS|2017|06|PART": {
+      "media": 36.49
+    },
+    "NORTE|2017|07|NO2": {
+      "media": 53.36
+    },
+    "NORTE|2017|07|PART": {
+      "media": 32.98
+    },
+    "CONGRESOS|2017|07|NO2": {
+      "media": 31.62
+    },
+    "CONGRESOS|2017|07|PART": {
+      "media": 40.32
+    },
+    "NORTE|2017|08|NO2": {
+      "media": 48.21
+    },
+    "NORTE|2017|08|PART": {
+      "media": 37.78
+    },
+    "CONGRESOS|2017|08|NO2": {
+      "media": 26.11
+    },
+    "CONGRESOS|2017|08|PART": {
+      "media": 44.37
+    },
+    "NORTE|2017|09|NO2": {
+      "media": 66.13
+    },
+    "NORTE|2017|09|PART": {
+      "media": 32.59
+    },
+    "CONGRESOS|2017|09|NO2": {
+      "media": 33.02
+    },
+    "CONGRESOS|2017|09|PART": {
+      "media": 34.32
+    },
+    "NORTE|2017|10|NO2": {
+      "media": 53.98
+    },
+    "NORTE|2017|10|PART": {
+      "media": 32.98
+    },
+    "CONGRESOS|2017|10|NO2": {
+      "media": 37.99
+    },
+    "CONGRESOS|2017|10|PART": {
+      "media": 31.34
+    },
+    "NORTE|2017|11|NO2": {
+      "media": 62.76
+    },
+    "NORTE|2017|11|PART": {
+      "media": 38.53
+    },
+    "CONGRESOS|2017|11|NO2": {
+      "media": 49.16
+    },
+    "CONGRESOS|2017|11|PART": {
+      "media": 25.23
+    },
+    "NORTE|2017|12|NO2": {
+      "media": 53.88
+    },
+    "NORTE|2017|12|PART": {
+      "media": 32.36
+    },
+    "CONGRESOS|2017|12|NO2": {
+      "media": 45.69
+    },
+    "CONGRESOS|2017|12|PART": {
+      "media": 20.21
+    },
+    "NORTE|2018|01|NO2": {
+      "media": 56.31
+    },
+    "NORTE|2018|01|PART": {
+      "media": 35.35
+    },
+    "CONGRESOS|2018|01|NO2": {
+      "media": 47.24
+    },
+    "CONGRESOS|2018|01|PART": {
+      "media": 22.54
+    },
+    "NORTE|2018|02|NO2": {
+      "media": 50.77
+    },
+    "NORTE|2018|02|PART": {
+      "media": 30.02
+    },
+    "CONGRESOS|2018|02|NO2": {
+      "media": 39.58
+    },
+    "CONGRESOS|2018|02|PART": {
+      "media": 21.14
+    },
+    "NORTE|2018|03|NO2": {
+      "media": 33.87
+    },
+    "NORTE|2018|03|PART": {
+      "media": 13.79
+    },
+    "CONGRESOS|2018|03|NO2": {
+      "media": 30.2
+    },
+    "CONGRESOS|2018|03|PART": {
+      "media": 10.66
+    },
+    "NORTE|2018|04|NO2": {
+      "media": 31.23
+    },
+    "NORTE|2018|04|PART": {
+      "media": 27.55
+    },
+    "CONGRESOS|2018|04|NO2": {
+      "media": 28.57
+    },
+    "CONGRESOS|2018|04|PART": {
+      "media": 25.15
+    },
+    "NORTE|2018|05|NO2": {
+      "media": 38.2
+    },
+    "NORTE|2018|05|PART": {
+      "media": 18.92
+    },
+    "CONGRESOS|2018|05|NO2": {
+      "media": 31.49
+    },
+    "CONGRESOS|2018|05|PART": {
+      "media": 17.43
+    },
+    "NORTE|2018|06|NO2": {
+      "media": 41.84
+    },
+    "NORTE|2018|06|PART": {
+      "media": 23.25
+    },
+    "CONGRESOS|2018|06|NO2": {
+      "media": 24.71
+    },
+    "CONGRESOS|2018|06|PART": {
+      "media": 22.82
+    },
+    "NORTE|2018|07|NO2": {
+      "media": 49.79
+    },
+    "NORTE|2018|07|PART": {
+      "media": 27.03
+    },
+    "CONGRESOS|2018|07|NO2": {
+      "media": 27.35
+    },
+    "CONGRESOS|2018|07|PART": {
+      "media": 30.38
+    },
+    "NORTE|2018|08|NO2": {
+      "media": 46.3
+    },
+    "NORTE|2018|08|PART": {
+      "media": 31.93
+    },
+    "CONGRESOS|2018|08|NO2": {
+      "media": 24.36
+    },
+    "CONGRESOS|2018|08|PART": {
+      "media": 35.04
+    },
+    "NORTE|2018|09|NO2": {
+      "media": 41.33
+    },
+    "NORTE|2018|09|PART": {
+      "media": 35.47
+    },
+    "CONGRESOS|2018|09|NO2": {
+      "media": 28.28
+    },
+    "CONGRESOS|2018|09|PART": {
+      "media": 32.42
+    },
+    "NORTE|2018|10|NO2": {
+      "media": 47.0
+    },
+    "NORTE|2018|10|PART": {
+      "media": 27.52
+    },
+    "CONGRESOS|2018|10|NO2": {
+      "media": 29.63
+    },
+    "CONGRESOS|2018|10|PART": {
+      "media": 21.78
+    },
+    "NORTE|2018|11|NO2": {
+      "media": 51.09
+    },
+    "NORTE|2018|11|PART": {
+      "media": 26.11
+    },
+    "CONGRESOS|2018|11|NO2": {
+      "media": 38.18
+    },
+    "CONGRESOS|2018|11|PART": {
+      "media": 16.45
+    },
+    "NORTE|2018|12|NO2": {
+      "media": 66.38
+    },
+    "NORTE|2018|12|PART": {
+      "media": 42.32
+    },
+    "CONGRESOS|2018|12|NO2": {
+      "media": 51.06
+    },
+    "CONGRESOS|2018|12|PART": {
+      "media": 25.34
+    },
+    "NORTE|2019|01|NO2": {
+      "media": 59.82
+    },
+    "NORTE|2019|01|PART": {
+      "media": 35.23
+    },
+    "CONGRESOS|2019|01|NO2": {
+      "media": 45.29
+    },
+    "CONGRESOS|2019|01|PART": {
+      "media": 22.0
+    },
+    "NORTE|2019|02|NO2": {
+      "media": 57.32
+    },
+    "NORTE|2019|02|PART": {
+      "media": 38.08
+    },
+    "CONGRESOS|2019|02|NO2": {
+      "media": 40.94
+    },
+    "CONGRESOS|2019|02|PART": {
+      "media": 25.91
+    },
+    "NORTE|2019|03|NO2": {
+      "media": 43.75
+    },
+    "NORTE|2019|03|PART": {
+      "media": 28.86
+    },
+    "CONGRESOS|2019|03|NO2": {
+      "media": 29.39
+    },
+    "CONGRESOS|2019|03|PART": {
+      "media": 26.45
+    },
+    "NORTE|2019|04|NO2": {
+      "media": 35.12
+    },
+    "NORTE|2019|04|PART": {
+      "media": 18.81
+    },
+    "CONGRESOS|2019|04|NO2": {
+      "media": 23.96
+    },
+    "CONGRESOS|2019|04|PART": {
+      "media": 15.15
+    },
+    "NORTE|2019|05|NO2": {
+      "media": 34.72
+    },
+    "NORTE|2019|05|PART": {
+      "media": 23.48
+    },
+    "CONGRESOS|2019|05|NO2": {
+      "media": 18.59
+    },
+    "CONGRESOS|2019|05|PART": {
+      "media": 24.11
+    },
+    "NORTE|2019|06|NO2": {
+      "media": 32.16
+    },
+    "NORTE|2019|06|PART": {
+      "media": 28.09
+    },
+    "CONGRESOS|2019|06|NO2": {
+      "media": 15.58
+    },
+    "CONGRESOS|2019|06|PART": {
+      "media": 33.82
+    },
+    "NORTE|2019|07|NO2": {
+      "media": 30.54
+    },
+    "NORTE|2019|07|PART": {
+      "media": 30.75
+    },
+    "CONGRESOS|2019|07|NO2": {
+      "media": 19.92
+    },
+    "CONGRESOS|2019|07|PART": {
+      "media": 41.93
+    },
+    "NORTE|2019|08|NO2": {
+      "media": 31.24
+    },
+    "NORTE|2019|08|PART": {
+      "media": 25.33
+    },
+    "CONGRESOS|2019|08|NO2": {
+      "media": 19.49
+    },
+    "CONGRESOS|2019|08|PART": {
+      "media": 30.5
+    },
+    "NORTE|2019|09|NO2": {
+      "media": 35.86
+    },
+    "NORTE|2019|09|PART": {
+      "media": 27.98
+    },
+    "CONGRESOS|2019|09|NO2": {
+      "media": 18.39
+    },
+    "CONGRESOS|2019|09|PART": {
+      "media": 26.49
+    },
+    "NORTE|2019|10|NO2": {
+      "media": 49.95
+    },
+    "NORTE|2019|10|PART": {
+      "media": 26.79
+    },
+    "CONGRESOS|2019|10|NO2": {
+      "media": 19.02
+    },
+    "CONGRESOS|2019|10|PART": {
+      "media": 24.53
+    },
+    "NORTE|2019|11|NO2": {
+      "media": 48.48
+    },
+    "NORTE|2019|11|PART": {
+      "media": 22.19
+    },
+    "CONGRESOS|2019|11|NO2": {
+      "media": 21.95
+    },
+    "CONGRESOS|2019|11|PART": {
+      "media": 15.13
+    },
+    "NORTE|2019|12|NO2": {
+      "media": 52.45
+    },
+    "NORTE|2019|12|PART": {
+      "media": 29.2
+    },
+    "CONGRESOS|2019|12|NO2": {
+      "media": 46.65
+    },
+    "CONGRESOS|2019|12|PART": {
+      "media": 19.52
+    },
+    "NORTE|2020|01|NO2": {
+      "media": 57.87
+    },
+    "NORTE|2020|01|PART": {
+      "media": 37.67
+    },
+    "CONGRESOS|2020|01|NO2": {
+      "media": 37.43
+    },
+    "CONGRESOS|2020|01|PART": {
+      "media": 23.06
+    },
+    "NORTE|2020|02|NO2": {
+      "media": 61.59
+    },
+    "NORTE|2020|02|PART": {
+      "media": 37.17
+    },
+    "CONGRESOS|2020|02|NO2": {
+      "media": 41.04
+    },
+    "CONGRESOS|2020|02|PART": {
+      "media": 26.04
+    },
+    "NORTE|2020|03|NO2": {
+      "media": 17.56
+    },
+    "NORTE|2020|03|PART": {
+      "media": 20.7
+    },
+    "CONGRESOS|2020|03|NO2": {
+      "media": 44.07
+    },
+    "CONGRESOS|2020|03|PART": {
+      "media": 17.42
+    },
+    "NORTE|2020|04|NO2": {
+      "media": 16.22
+    },
+    "NORTE|2020|04|PART": {
+      "media": 12.54
+    },
+    "CONGRESOS|2020|04|NO2": {
+      "media": 11.39
+    },
+    "CONGRESOS|2020|04|PART": {
+      "media": 11.94
+    },
+    "NORTE|2020|05|NO2": {
+      "media": 22.52
+    },
+    "NORTE|2020|05|PART": {
+      "media": 17.32
+    },
+    "CONGRESOS|2020|05|NO2": {
+      "media": 15.44
+    },
+    "CONGRESOS|2020|05|PART": {
+      "media": 16.02
+    },
+    "NORTE|2020|06|NO2": {
+      "media": 25.25
+    },
+    "NORTE|2020|06|PART": {
+      "media": 20.05
+    },
+    "CONGRESOS|2020|06|NO2": {
+      "media": 15.58
+    },
+    "CONGRESOS|2020|06|PART": {
+      "media": 21.36
+    },
+    "NORTE|2020|07|NO2": {
+      "media": 34.14
+    },
+    "NORTE|2020|07|PART": {
+      "media": 35.53
+    },
+    "CONGRESOS|2020|07|NO2": {
+      "media": 24.45
+    },
+    "CONGRESOS|2020|07|PART": {
+      "media": 34.12
+    },
+    "NORTE|2020|08|NO2": {
+      "media": 32.17
+    },
+    "NORTE|2020|08|PART": {
+      "media": 29.14
+    },
+    "CONGRESOS|2020|08|NO2": {
+      "media": 19.86
+    },
+    "CONGRESOS|2020|08|PART": {
+      "media": 38.41
+    },
+    "NORTE|2020|09|NO2": {
+      "media": 35.75
+    },
+    "NORTE|2020|09|PART": {
+      "media": 24.83
+    },
+    "CONGRESOS|2020|09|NO2": {
+      "media": 19.22
+    },
+    "CONGRESOS|2020|09|PART": {
+      "media": 28.48
+    },
+    "NORTE|2020|10|NO2": {
+      "media": 43.12
+    },
+    "NORTE|2020|10|PART": {
+      "media": 24.8
+    },
+    "CONGRESOS|2020|10|NO2": {
+      "media": 25.78
+    },
+    "CONGRESOS|2020|10|PART": {
+      "media": 23.69
+    },
+    "NORTE|2020|11|NO2": {
+      "media": 41.52
+    },
+    "NORTE|2020|11|PART": {
+      "media": 26.71
+    },
+    "CONGRESOS|2020|11|NO2": {
+      "media": 26.25
+    },
+    "CONGRESOS|2020|11|PART": {
+      "media": 21.77
+    },
+    "NORTE|2020|12|NO2": {
+      "media": 42.9
+    },
+    "NORTE|2020|12|PART": {
+      "media": 22.55
+    },
+    "CONGRESOS|2020|12|NO2": {
+      "media": 27.84
+    },
+    "CONGRESOS|2020|12|PART": {
+      "media": 18.29
+    },
+    "NORTE|2021|01|NO2": {
+      "media": 38.53
+    },
+    "NORTE|2021|01|PART": {
+      "media": 23.91
+    },
+    "CONGRESOS|2021|01|NO2": {
+      "media": 26.5
+    },
+    "CONGRESOS|2021|01|PART": {
+      "media": 17.57
+    },
+    "NORTE|2021|02|NO2": {
+      "media": 34.81
+    },
+    "NORTE|2021|02|PART": {
+      "media": 31.83
+    },
+    "CONGRESOS|2021|02|NO2": {
+      "media": 22.89
+    },
+    "CONGRESOS|2021|02|PART": {
+      "media": 24.96
+    },
+    "NORTE|2021|03|NO2": {
+      "media": 31.82
+    },
+    "NORTE|2021|03|PART": {
+      "media": 35.29
+    },
+    "CONGRESOS|2021|03|NO2": {
+      "media": 19.96
+    },
+    "CONGRESOS|2021|03|PART": {
+      "media": 30.37
+    },
+    "NORTE|2021|04|NO2": {
+      "media": 23.61
+    },
+    "NORTE|2021|04|PART": {
+      "media": 19.86
+    },
+    "CONGRESOS|2021|04|NO2": {
+      "media": 14.86
+    },
+    "CONGRESOS|2021|04|PART": {
+      "media": 17.39
+    },
+    "NORTE|2021|05|NO2": {
+      "media": 25.56
+    },
+    "NORTE|2021|05|PART": {
+      "media": 17.1
+    },
+    "CONGRESOS|2021|05|NO2": {
+      "media": 14.59
+    },
+    "CONGRESOS|2021|05|PART": {
+      "media": 15.68
+    },
+    "NORTE|2021|06|NO2": {
+      "media": 24.62
+    },
+    "NORTE|2021|06|PART": {
+      "media": 21.37
+    },
+    "CONGRESOS|2021|06|NO2": {
+      "media": 13.3
+    },
+    "CONGRESOS|2021|06|PART": {
+      "media": 19.17
+    },
+    "NORTE|2021|07|NO2": {
+      "media": 25.02
+    },
+    "NORTE|2021|07|PART": {
+      "media": 38.15
+    },
+    "CONGRESOS|2021|07|NO2": {
+      "media": 14.97
+    },
+    "CONGRESOS|2021|07|PART": {
+      "media": 35.58
+    },
+    "NORTE|2021|08|NO2": {
+      "media": 25.25
+    },
+    "NORTE|2021|08|PART": {
+      "media": 41.95
+    },
+    "CONGRESOS|2021|08|NO2": {
+      "media": 14.51
+    },
+    "CONGRESOS|2021|08|PART": {
+      "media": 37.5
+    },
+    "NORTE|2021|09|NO2": {
+      "media": 33.6
+    },
+    "NORTE|2021|09|PART": {
+      "media": 27.8
+    },
+    "CONGRESOS|2021|09|NO2": {
+      "media": 17.38
+    },
+    "CONGRESOS|2021|09|PART": {
+      "media": 24.35
+    },
+    "NORTE|2021|10|NO2": {
+      "media": 34.16
+    },
+    "NORTE|2021|10|PART": {
+      "media": 29.31
+    },
+    "CONGRESOS|2021|10|NO2": {
+      "media": 19.98
+    },
+    "CONGRESOS|2021|10|PART": {
+      "media": 23.1
+    },
+    "NORTE|2021|11|NO2": {
+      "media": 42.53
+    },
+    "NORTE|2021|11|PART": {
+      "media": 23.38
+    },
+    "CONGRESOS|2021|11|NO2": {
+      "media": 26.64
+    },
+    "CONGRESOS|2021|11|PART": {
+      "media": 16.25
+    },
+    "NORTE|2021|12|NO2": {
+      "media": 46.71
+    },
+    "NORTE|2021|12|PART": {
+      "media": 30.29
+    },
+    "CONGRESOS|2021|12|NO2": {
+      "media": 32.22
+    },
+    "CONGRESOS|2021|12|PART": {
+      "media": 20.05
+    },
+    "NORTE|2022|01|NO2": {
+      "media": 51.21
+    },
+    "NORTE|2022|01|PART": {
+      "media": 32.68
+    },
+    "CONGRESOS|2022|01|NO2": {
+      "media": 31.88
+    },
+    "CONGRESOS|2022|01|PART": {
+      "media": 21.5
+    },
+    "NORTE|2022|02|NO2": {
+      "media": 51.51
+    },
+    "NORTE|2022|02|PART": {
+      "media": 36.31
+    },
+    "NORTE|2022|02|PM25": {
+      "media": 16.79
+    },
+    "CONGRESOS|2022|02|NO2": {
+      "media": 30.69
+    },
+    "CONGRESOS|2022|02|PART": {
+      "media": 27.29
+    },
+    "CONGRESOS|2022|02|PM25": {
+      "media": 11.57
+    },
+    "NORTE|2022|03|NO2": {
+      "media": 29.13
+    },
+    "NORTE|2022|03|PART": {
+      "media": 72.39
+    },
+    "NORTE|2022|03|PM25": {
+      "media": 22.5
+    },
+    "CONGRESOS|2022|03|NO2": {
+      "media": 20.01
+    },
+    "CONGRESOS|2022|03|PART": {
+      "media": 70.89
+    },
+    "CONGRESOS|2022|03|PM25": {
+      "media": 24.36
+    },
+    "NORTE|2022|04|NO2": {
+      "media": 26.6
+    },
+    "NORTE|2022|04|PART": {
+      "media": 17.38
+    },
+    "NORTE|2022|04|PM25": {
+      "media": 8.76
+    },
+    "CONGRESOS|2022|04|NO2": {
+      "media": 15.23
+    },
+    "CONGRESOS|2022|04|PART": {
+      "media": 15.44
+    },
+    "CONGRESOS|2022|04|PM25": {
+      "media": 9.38
+    },
+    "NORTE|2022|05|NO2": {
+      "media": 29.92
+    },
+    "NORTE|2022|05|PART": {
+      "media": 28.67
+    },
+    "NORTE|2022|05|PM25": {
+      "media": 9.8
+    },
+    "CONGRESOS|2022|05|NO2": {
+      "media": 13.67
+    },
+    "CONGRESOS|2022|05|PART": {
+      "media": 27.71
+    },
+    "CONGRESOS|2022|05|PM25": {
+      "media": 12.51
+    },
+    "NORTE|2022|06|NO2": {
+      "media": 41.86
+    },
+    "NORTE|2022|06|PART": {
+      "media": 31.11
+    },
+    "NORTE|2022|06|PM25": {
+      "media": 9.14
+    },
+    "CONGRESOS|2022|06|NO2": {
+      "media": 13.12
+    },
+    "CONGRESOS|2022|06|PART": {
+      "media": 30.42
+    },
+    "CONGRESOS|2022|06|PM25": {
+      "media": 12.82
+    },
+    "NORTE|2022|07|NO2": {
+      "media": 25.92
+    },
+    "NORTE|2022|07|PART": {
+      "media": 33.17
+    },
+    "NORTE|2022|07|PM25": {
+      "media": 10.17
+    },
+    "CONGRESOS|2022|07|NO2": {
+      "media": 13.73
+    },
+    "CONGRESOS|2022|07|PART": {
+      "media": 33.82
+    },
+    "CONGRESOS|2022|07|PM25": {
+      "media": 15.25
+    },
+    "NORTE|2022|08|NO2": {
+      "media": 25.67
+    },
+    "NORTE|2022|08|PART": {
+      "media": 34.62
+    },
+    "NORTE|2022|08|PM25": {
+      "media": 7.47
+    },
+    "CONGRESOS|2022|08|NO2": {
+      "media": 12.87
+    },
+    "CONGRESOS|2022|08|PART": {
+      "media": 33.82
+    },
+    "CONGRESOS|2022|08|PM25": {
+      "media": 14.31
+    },
+    "NORTE|2022|09|NO2": {
+      "media": 25.7
+    },
+    "NORTE|2022|09|PART": {
+      "media": 28.33
+    },
+    "NORTE|2022|09|PM25": {
+      "media": 10.18
+    },
+    "CONGRESOS|2022|09|NO2": {
+      "media": 13.65
+    },
+    "CONGRESOS|2022|09|PART": {
+      "media": 25.81
+    },
+    "CONGRESOS|2022|09|PM25": {
+      "media": 13.17
+    },
+    "NORTE|2022|10|NO2": {
+      "media": 40.53
+    },
+    "NORTE|2022|10|PART": {
+      "media": 52.58
+    },
+    "NORTE|2022|10|PM25": {
+      "media": 12.35
+    },
+    "CONGRESOS|2022|10|NO2": {
+      "media": 23.16
+    },
+    "CONGRESOS|2022|10|PART": {
+      "media": 49.81
+    },
+    "CONGRESOS|2022|10|PM25": {
+      "media": 14.19
+    },
+    "NORTE|2022|11|NO2": {
+      "media": 38.46
+    },
+    "NORTE|2022|11|PART": {
+      "media": 22.98
+    },
+    "NORTE|2022|11|PM25": {
+      "media": 8.6
+    },
+    "CONGRESOS|2022|11|NO2": {
+      "media": 23.02
+    },
+    "CONGRESOS|2022|11|PART": {
+      "media": 19.62
+    },
+    "CONGRESOS|2022|11|PM25": {
+      "media": 7.84
+    },
+    "NORTE|2022|12|NO2": {
+      "media": 41.88
+    },
+    "NORTE|2022|12|PART": {
+      "media": 26.07
+    },
+    "NORTE|2022|12|PM25": {
+      "media": 12.55
+    },
+    "CONGRESOS|2022|12|NO2": {
+      "media": 30.77
+    },
+    "CONGRESOS|2022|12|PART": {
+      "media": 19.94
+    },
+    "CONGRESOS|2022|12|PM25": {
+      "media": 9.02
+    },
+    "NORTE|2023|01|NO2": {
+      "media": 36.55
+    },
+    "NORTE|2023|01|PART": {
+      "media": 25.96
+    },
+    "NORTE|2023|01|PM25": {
+      "media": 13.66
+    },
+    "CONGRESOS|2023|01|NO2": {
+      "media": 24.72
+    },
+    "CONGRESOS|2023|01|PART": {
+      "media": 20.91
+    },
+    "CONGRESOS|2023|01|PM25": {
+      "media": 9.94
+    },
+    "NORTE|2023|02|NO2": {
+      "media": 38.69
+    },
+    "NORTE|2023|02|PART": {
+      "media": 32.03
+    },
+    "NORTE|2023|02|PM25": {
+      "media": 13.02
+    },
+    "CONGRESOS|2023|02|NO2": {
+      "media": 25.72
+    },
+    "CONGRESOS|2023|02|PART": {
+      "media": 27.63
+    },
+    "CONGRESOS|2023|02|PM25": {
+      "media": 7.72
+    },
+    "NORTE|2023|03|NO2": {
+      "media": 34.57
+    },
+    "NORTE|2023|03|PART": {
+      "media": 20.43
+    },
+    "NORTE|2023|03|PM25": {
+      "media": 8.71
+    },
+    "CONGRESOS|2023|03|NO2": {
+      "media": 14.92
+    },
+    "CONGRESOS|2023|03|PART": {
+      "media": 18.01
+    },
+    "CONGRESOS|2023|03|PM25": {
+      "media": 6.92
+    },
+    "NORTE|2023|04|NO2": {
+      "media": 28.74
+    },
+    "NORTE|2023|04|PART": {
+      "media": 25.34
+    },
+    "NORTE|2023|04|PM25": {
+      "media": 6.8
+    },
+    "CONGRESOS|2023|04|NO2": {
+      "media": 22.75
+    },
+    "CONGRESOS|2023|04|PART": {
+      "media": 26.73
+    },
+    "CONGRESOS|2023|04|PM25": {
+      "media": 7.8
+    },
+    "NORTE|2023|05|NO2": {
+      "media": 25.93
+    },
+    "NORTE|2023|05|PART": {
+      "media": 15.94
+    },
+    "NORTE|2023|05|PM25": {
+      "media": 5.56
+    },
+    "CONGRESOS|2023|05|NO2": {
+      "media": 13.92
+    },
+    "CONGRESOS|2023|05|PART": {
+      "media": 18.71
+    },
+    "CONGRESOS|2023|05|PM25": {
+      "media": 7.05
+    },
+    "NORTE|2023|06|NO2": {
+      "media": 27.65
+    },
+    "NORTE|2023|06|PART": {
+      "media": 18.49
+    },
+    "NORTE|2023|06|PM25": {
+      "media": 6.96
+    },
+    "CONGRESOS|2023|06|NO2": {
+      "media": 14.61
+    },
+    "CONGRESOS|2023|06|PART": {
+      "media": 16.45
+    },
+    "CONGRESOS|2023|06|PM25": {
+      "media": 7.58
+    },
+    "NORTE|2023|07|NO2": {
+      "media": 44.25
+    },
+    "NORTE|2023|07|PART": {
+      "media": 31.86
+    },
+    "NORTE|2023|07|PM25": {
+      "media": 8.39
+    },
+    "CONGRESOS|2023|07|NO2": {
+      "media": 14.7
+    },
+    "CONGRESOS|2023|07|PART": {
+      "media": 35.14
+    },
+    "CONGRESOS|2023|07|PM25": {
+      "media": 16.28
+    },
+    "NORTE|2023|08|NO2": {
+      "media": 27.78
+    },
+    "NORTE|2023|08|PART": {
+      "media": 31.67
+    },
+    "NORTE|2023|08|PM25": {
+      "media": 7.51
+    },
+    "CONGRESOS|2023|08|NO2": {
+      "media": 14.05
+    },
+    "CONGRESOS|2023|08|PART": {
+      "media": 34.78
+    },
+    "CONGRESOS|2023|08|PM25": {
+      "media": 13.31
+    },
+    "NORTE|2023|09|NO2": {
+      "media": 25.32
+    },
+    "NORTE|2023|09|PART": {
+      "media": 21.55
+    },
+    "NORTE|2023|09|PM25": {
+      "media": 5.43
+    },
+    "CONGRESOS|2023|09|NO2": {
+      "media": 17.77
+    },
+    "CONGRESOS|2023|09|PART": {
+      "media": 25.32
+    },
+    "CONGRESOS|2023|09|PM25": {
+      "media": 11.53
+    },
+    "NORTE|2023|10|NO2": {
+      "media": 25.45
+    },
+    "NORTE|2023|10|PART": {
+      "media": 21.68
+    },
+    "NORTE|2023|10|PM25": {
+      "media": 6.56
+    },
+    "CONGRESOS|2023|10|NO2": {
+      "media": 18.86
+    },
+    "CONGRESOS|2023|10|PART": {
+      "media": 21.73
+    },
+    "CONGRESOS|2023|10|PM25": {
+      "media": 12.44
+    },
+    "NORTE|2023|11|NO2": {
+      "media": 27.55
+    },
+    "NORTE|2023|11|PART": {
+      "media": 23.8
+    },
+    "NORTE|2023|11|PM25": {
+      "media": 9.19
+    },
+    "CONGRESOS|2023|11|NO2": {
+      "media": 25.55
+    },
+    "CONGRESOS|2023|11|PART": {
+      "media": 19.63
+    },
+    "CONGRESOS|2023|11|PM25": {
+      "media": 12.51
+    },
+    "NORTE|2023|12|NO2": {
+      "media": 52.45
+    },
+    "NORTE|2023|12|PART": {
+      "media": 30.03
+    },
+    "NORTE|2023|12|PM25": {
+      "media": 13.97
+    },
+    "CONGRESOS|2023|12|NO2": {
+      "media": 34.72
+    },
+    "CONGRESOS|2023|12|PART": {
+      "media": 24.83
+    },
+    "CONGRESOS|2023|12|PM25": {
+      "media": 16.85
+    },
+    "NORTE|2024|01|NO2": {
+      "media": 48.52
+    },
+    "NORTE|2024|01|PART": {
+      "media": 28.21
+    },
+    "NORTE|2024|01|PM25": {
+      "media": 12.17
+    },
+    "CONGRESOS|2024|01|NO2": {
+      "media": 30.87
+    },
+    "CONGRESOS|2024|01|PART": {
+      "media": 23.11
+    },
+    "CONGRESOS|2024|01|PM25": {
+      "media": 14.95
+    },
+    "NORTE|2024|02|NO2": {
+      "media": 34.65
+    },
+    "NORTE|2024|02|PART": {
+      "media": 20.69
+    },
+    "NORTE|2024|02|PM25": {
+      "media": 8.29
+    },
+    "CONGRESOS|2024|02|NO2": {
+      "media": 20.46
+    },
+    "CONGRESOS|2024|02|PART": {
+      "media": 17.29
+    },
+    "CONGRESOS|2024|02|PM25": {
+      "media": 10.82
+    },
+    "NORTE|2024|03|NO2": {
+      "media": 27.35
+    },
+    "NORTE|2024|03|PART": {
+      "media": 26.15
+    },
+    "NORTE|2024|03|PM25": {
+      "media": 7.72
+    },
+    "CONGRESOS|2024|03|NO2": {
+      "media": 15.94
+    },
+    "CONGRESOS|2024|03|PART": {
+      "media": 32.05
+    },
+    "CONGRESOS|2024|03|PM25": {
+      "media": 12.55
+    },
+    "NORTE|2024|04|NO2": {
+      "media": 26.78
+    },
+    "NORTE|2024|04|PART": {
+      "media": 27.22
+    },
+    "NORTE|2024|04|PM25": {
+      "media": 6.96
+    },
+    "CONGRESOS|2024|04|NO2": {
+      "media": 14.28
+    },
+    "CONGRESOS|2024|04|PART": {
+      "media": 26.64
+    },
+    "CONGRESOS|2024|04|PM25": {
+      "media": 12.23
+    },
+    "NORTE|2024|05|NO2": {
+      "media": 26.92
+    },
+    "NORTE|2024|05|PART": {
+      "media": 21.32
+    },
+    "NORTE|2024|05|PM25": {
+      "media": 4.76
+    },
+    "CONGRESOS|2024|05|NO2": {
+      "media": 11.69
+    },
+    "CONGRESOS|2024|05|PART": {
+      "media": 15.79
+    },
+    "CONGRESOS|2024|05|PM25": {
+      "media": 11.13
+    },
+    "NORTE|2024|06|NO2": {
+      "media": 20.37
+    },
+    "NORTE|2024|06|PART": {
+      "media": 20.85
+    },
+    "NORTE|2024|06|PM25": {
+      "media": 4.78
+    },
+    "CONGRESOS|2024|06|NO2": {
+      "media": 10.53
+    },
+    "CONGRESOS|2024|06|PM25": {
+      "media": 12.6
+    },
+    "NORTE|2024|07|NO2": {
+      "media": 26.67
+    },
+    "NORTE|2024|07|PART": {
+      "media": 28.75
+    },
+    "NORTE|2024|07|PM25": {
+      "media": 5.08
+    },
+    "CONGRESOS|2024|07|NO2": {
+      "media": 13.92
+    },
+    "CONGRESOS|2024|07|PART": {
+      "media": 35.46
+    },
+    "CONGRESOS|2024|07|PM25": {
+      "media": 20.84
+    },
+    "NORTE|2024|08|NO2": {
+      "media": 22.37
+    },
+    "NORTE|2024|08|PART": {
+      "media": 28.25
+    },
+    "NORTE|2024|08|PM25": {
+      "media": 4.88
+    },
+    "CONGRESOS|2024|08|NO2": {
+      "media": 11.34
+    },
+    "CONGRESOS|2024|08|PART": {
+      "media": 32.09
+    },
+    "CONGRESOS|2024|08|PM25": {
+      "media": 18.6
+    },
+    "NORTE|2024|09|NO2": {
+      "media": 26.62
+    },
+    "NORTE|2024|09|PART": {
+      "media": 23.33
+    },
+    "NORTE|2024|09|PM25": {
+      "media": 4.95
+    },
+    "CONGRESOS|2024|09|NO2": {
+      "media": 13.12
+    },
+    "CONGRESOS|2024|09|PART": {
+      "media": 25.41
+    },
+    "CONGRESOS|2024|09|PM25": {
+      "media": 12.41
+    },
+    "NORTE|2024|10|NO2": {
+      "media": 29.3
+    },
+    "NORTE|2024|10|PART": {
+      "media": 17.01
+    },
+    "NORTE|2024|10|PM25": {
+      "media": 5.73
+    },
+    "CONGRESOS|2024|10|NO2": {
+      "media": 14.92
+    },
+    "CONGRESOS|2024|10|PART": {
+      "media": 18.83
+    },
+    "CONGRESOS|2024|10|PM25": {
+      "media": 9.48
+    },
+    "NORTE|2024|11|NO2": {
+      "media": 40.46
+    },
+    "NORTE|2024|11|PART": {
+      "media": 31.38
+    },
+    "NORTE|2024|11|PM25": {
+      "media": 10.24
+    },
+    "CONGRESOS|2024|11|NO2": {
+      "media": 25.24
+    },
+    "CONGRESOS|2024|11|PART": {
+      "media": 28.72
+    },
+    "CONGRESOS|2024|11|PM25": {
+      "media": 15.05
+    },
+    "NORTE|2024|12|NO2": {
+      "media": 48.2
+    },
+    "NORTE|2024|12|PART": {
+      "media": 28.52
+    },
+    "NORTE|2024|12|PM25": {
+      "media": 12.01
+    },
+    "CONGRESOS|2024|12|NO2": {
+      "media": 28.2
+    },
+    "CONGRESOS|2024|12|PART": {
+      "media": 26.38
+    },
+    "CONGRESOS|2024|12|PM25": {
+      "media": 15.85
+    },
+    "NORTE|2025|01|NO2": {
+      "media": 42.65
+    },
+    "NORTE|2025|01|PART": {
+      "media": 21.58
+    },
+    "NORTE|2025|01|PM25": {
+      "media": 8.83
+    },
+    "CONGRESOS|2025|01|NO2": {
+      "media": 23.98
+    },
+    "CONGRESOS|2025|01|PART": {
+      "media": 20.63
+    },
+    "CONGRESOS|2025|01|PM25": {
+      "media": 11.37
+    },
+    "NORTE|2025|02|NO2": {
+      "media": 44.38
+    },
+    "NORTE|2025|02|PART": {
+      "media": 22.13
+    },
+    "NORTE|2025|02|PM25": {
+      "media": 7.85
+    },
+    "CONGRESOS|2025|02|NO2": {
+      "media": 23.26
+    },
+    "CONGRESOS|2025|02|PART": {
+      "media": 19.18
+    },
+    "CONGRESOS|2025|02|PM25": {
+      "media": 11.86
+    },
+    "NORTE|2025|03|NO2": {
+      "media": 24.07
+    },
+    "NORTE|2025|03|PART": {
+      "media": 13.62
+    },
+    "NORTE|2025|03|PM25": {
+      "media": 4.27
+    },
+    "CONGRESOS|2025|03|NO2": {
+      "media": 15.81
+    },
+    "CONGRESOS|2025|03|PART": {
+      "media": 12.87
+    },
+    "CONGRESOS|2025|03|PM25": {
+      "media": 7.43
+    },
+    "NORTE|2025|04|NO2": {
+      "media": 24.04
+    },
+    "NORTE|2025|04|PART": {
+      "media": 18.81
+    },
+    "NORTE|2025|04|PM25": {
+      "media": 6.32
+    },
+    "CONGRESOS|2025|04|NO2": {
+      "media": 13.65
+    },
+    "CONGRESOS|2025|04|PART": {
+      "media": 15.57
+    },
+    "CONGRESOS|2025|04|PM25": {
+      "media": 7.43
+    },
+    "NORTE|2025|05|NO2": {
+      "media": 23.84
+    },
+    "NORTE|2025|05|PART": {
+      "media": 13.89
+    },
+    "NORTE|2025|05|PM25": {
+      "media": 7.38
+    },
+    "CONGRESOS|2025|05|NO2": {
+      "media": 14.91
+    },
+    "CONGRESOS|2025|05|PART": {
+      "media": 16.22
+    },
+    "CONGRESOS|2025|05|PM25": {
+      "media": 9.03
+    },
+    "NORTE|2025|06|NO2": {
+      "media": 27.65
+    },
+    "NORTE|2025|06|PART": {
+      "media": 35.93
+    },
+    "NORTE|2025|06|PM25": {
+      "media": 11.13
+    },
+    "CONGRESOS|2025|06|NO2": {
+      "media": 13.89
+    },
+    "CONGRESOS|2025|06|PART": {
+      "media": 42.34
+    },
+    "CONGRESOS|2025|06|PM25": {
+      "media": 19.19
+    },
+    "NORTE|2025|07|NO2": {
+      "media": 20.67
+    },
+    "NORTE|2025|07|PART": {
+      "media": 21.79
+    },
+    "NORTE|2025|07|PM25": {
+      "media": 8.03
+    },
+    "CONGRESOS|2025|07|NO2": {
+      "media": 12.58
+    },
+    "CONGRESOS|2025|07|PART": {
+      "media": 25.78
+    },
+    "CONGRESOS|2025|07|PM25": {
+      "media": 12.8
+    },
+    "NORTE|2025|08|NO2": {
+      "media": 22.68
+    },
+    "NORTE|2025|08|PART": {
+      "media": 35.59
+    },
+    "NORTE|2025|08|PM25": {
+      "media": 10.0
+    },
+    "CONGRESOS|2025|08|NO2": {
+      "media": 10.85
+    },
+    "CONGRESOS|2025|08|PART": {
+      "media": 40.8
+    },
+    "CONGRESOS|2025|08|PM25": {
+      "media": 19.7
+    },
+    "NORTE|2025|09|NO2": {
+      "media": 27.93
+    },
+    "NORTE|2025|09|PART": {
+      "media": 25.34
+    },
+    "NORTE|2025|09|PM25": {
+      "media": 5.11
+    },
+    "CONGRESOS|2025|09|NO2": {
+      "media": 12.11
+    },
+    "CONGRESOS|2025|09|PART": {
+      "media": 29.66
+    },
+    "CONGRESOS|2025|09|PM25": {
+      "media": 12.95
+    },
+    "NORTE|2025|10|NO2": {
+      "media": 28.13
+    },
+    "NORTE|2025|10|PART": {
+      "media": 21.37
+    },
+    "NORTE|2025|10|PM25": {
+      "media": 5.39
+    },
+    "CONGRESOS|2025|10|NO2": {
+      "media": 13.69
+    },
+    "CONGRESOS|2025|10|PART": {
+      "media": 25.02
+    },
+    "CONGRESOS|2025|10|PM25": {
+      "media": 11.69
+    },
+    "NORTE|2025|11|NO2": {
+      "media": 35.39
+    },
+    "NORTE|2025|11|PART": {
+      "media": 16.81
+    },
+    "NORTE|2025|11|PM25": {
+      "media": 4.5
+    },
+    "CONGRESOS|2025|11|NO2": {
+      "media": 18.41
+    },
+    "CONGRESOS|2025|11|PART": {
+      "media": 15.92
+    },
+    "CONGRESOS|2025|11|PM25": {
+      "media": 8.92
+    },
+    "NORTE|2025|12|NO2": {
+      "media": 40.64
+    },
+    "NORTE|2025|12|PART": {
+      "media": 20.95
+    },
+    "NORTE|2025|12|PM25": {
+      "media": 5.68
+    },
+    "CONGRESOS|2025|12|NO2": {
+      "media": 22.03
+    },
+    "CONGRESOS|2025|12|PART": {
+      "media": 18.2
+    },
+    "CONGRESOS|2025|12|PM25": {
+      "media": 10.59
+    },
+    "NORTE|2026|01|NO2": {
+      "media": 33.26
+    },
+    "NORTE|2026|01|PART": {
+      "media": 17.75
+    },
+    "NORTE|2026|01|PM25": {
+      "media": 4.11
+    },
+    "CONGRESOS|2026|01|NO2": {
+      "media": 18.86
+    },
+    "CONGRESOS|2026|01|PART": {
+      "media": 17.61
+    },
+    "CONGRESOS|2026|01|PM25": {
+      "media": 8.9
+    },
+    "NORTE|2026|02|NO2": {
+      "media": 31.43
+    },
+    "NORTE|2026|02|PART": {
+      "media": 16.3
+    },
+    "NORTE|2026|02|PM25": {
+      "media": 3.38
+    },
+    "CONGRESOS|2026|02|NO2": {
+      "media": 16.42
+    },
+    "CONGRESOS|2026|02|PART": {
+      "media": 12.31
+    },
+    "CONGRESOS|2026|02|PM25": {
+      "media": 6.48
+    },
+    "NORTE|2026|03|NO2": {
+      "media": 24.16
+    },
+    "NORTE|2026|03|PART": {
+      "media": 19.64
+    },
+    "NORTE|2026|03|PM25": {
+      "media": 5.17
+    },
+    "CONGRESOS|2026|03|NO2": {
+      "media": 13.67
+    },
+    "CONGRESOS|2026|03|PART": {
+      "media": 21.96
+    },
+    "CONGRESOS|2026|03|PM25": {
+      "media": 10.72
+    }
+  }
+}
