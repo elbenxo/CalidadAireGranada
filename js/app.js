@@ -300,62 +300,158 @@ function renderTable(year, month) {
   });
 }
 
-function renderTrafficChart(year, month) {
-  const canvas = document.getElementById("chartTraffic");
+// ---------- Traffic correlation ----------
+
+function pearson(pairs) {
+  const n = pairs.length;
+  if (n < 3) return null;
+  const mx = pairs.reduce((a, p) => a + p.x, 0) / n;
+  const my = pairs.reduce((a, p) => a + p.y, 0) / n;
+  let num = 0, dx2 = 0, dy2 = 0;
+  for (const p of pairs) {
+    const dx = p.x - mx, dy = p.y - my;
+    num += dx * dy;
+    dx2 += dx * dx;
+    dy2 += dy * dy;
+  }
+  if (dx2 === 0 || dy2 === 0) return null;
+  const r = num / Math.sqrt(dx2 * dy2);
+  const slope = num / dx2;
+  const intercept = my - slope * mx;
+  return { r, slope, intercept, n, mx, my };
+}
+
+function correlationStrength(r) {
+  const a = Math.abs(r);
+  if (a >= 0.7) return { label: "fuerte", cls: "delta up" };
+  if (a >= 0.4) return { label: "moderada", cls: "delta up" };
+  if (a >= 0.2) return { label: "débil", cls: "delta flat" };
+  return { label: "inexistente", cls: "delta flat" };
+}
+
+function buildCorrelationPairs(month, pollutant, stations, yearFrom, yearTo) {
   const monthKey = String(month).padStart(2, "0");
   const monthRow = state.traffic.monthly_imd[monthKey] || {};
-  const allYears = state.traffic.years.slice();
-  const startYear = year - WINDOW_YEARS;
-  const yearsShown = allYears.filter(y => y >= startYear && y <= year);
+  const pairs = [];
+  for (let y = yearFrom; y <= yearTo; y++) {
+    const pol = getMeanForStations(stations, y, month, pollutant);
+    const imd = monthRow[y] ?? monthRow[String(y)];
+    if (pol !== null && pol !== undefined && imd !== null && imd !== undefined) {
+      pairs.push({ x: imd, y: pol, year: y });
+    }
+  }
+  return pairs;
+}
 
-  const labels = yearsShown;
-  const values = yearsShown.map(y => monthRow[y] ?? monthRow[String(y)] ?? null);
-  const highlightIdx = yearsShown.indexOf(year);
+function drawScatter(canvasId, pollutant, month, stations, year) {
+  const cfg = POLLUTANTS[pollutant];
+  const pairs = buildCorrelationPairs(month, pollutant, stations, year - WINDOW_YEARS, year);
+  const stats = pearson(pairs);
 
-  const bgColors = yearsShown.map((y, i) =>
-    i === highlightIdx ? "rgba(166,25,46,0.85)" : "rgba(90,90,90,0.5)");
-  const borderColors = yearsShown.map((y, i) =>
-    i === highlightIdx ? "#7a0f20" : "#333");
+  // Split current-year point from the rest for distinct styling.
+  const historical = pairs.filter(p => p.year !== year);
+  const current = pairs.filter(p => p.year === year);
 
-  if (state.charts.traffic) state.charts.traffic.destroy();
-  state.charts.traffic = new Chart(canvas, {
-    type: "bar",
-    data: {
-      labels,
-      datasets: [{
-        label: `IMD · ${MONTHS_ES[month - 1]}`,
-        data: values,
-        backgroundColor: bgColors,
-        borderColor: borderColors,
-        borderWidth: 1.5,
-      }],
-    },
+  const datasets = [{
+    label: "Años anteriores",
+    data: historical,
+    backgroundColor: "rgba(90,90,90,0.55)",
+    borderColor: "#333",
+    pointRadius: 5,
+    pointHoverRadius: 7,
+  }];
+  if (current.length) datasets.push({
+    label: `${year}`,
+    data: current,
+    backgroundColor: "rgba(166,25,46,0.9)",
+    borderColor: "#7a0f20",
+    pointRadius: 7,
+    pointHoverRadius: 9,
+  });
+
+  // Regression line
+  if (stats && pairs.length >= 3) {
+    const xs = pairs.map(p => p.x);
+    const xMin = Math.min(...xs), xMax = Math.max(...xs);
+    datasets.push({
+      type: "line",
+      label: `Ajuste lineal (r=${stats.r.toFixed(2)})`,
+      data: [
+        { x: xMin, y: stats.slope * xMin + stats.intercept },
+        { x: xMax, y: stats.slope * xMax + stats.intercept },
+      ],
+      borderColor: "rgba(212,160,23,0.9)",
+      borderDash: [6, 4],
+      borderWidth: 2,
+      pointRadius: 0,
+      fill: false,
+      order: 0,
+    });
+  }
+
+  const ctx = document.getElementById(canvasId);
+  if (state.charts[canvasId]) state.charts[canvasId].destroy();
+  state.charts[canvasId] = new Chart(ctx, {
+    type: "scatter",
+    data: { datasets },
     options: {
       responsive: true, maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        tooltip: { callbacks: { label: (c) => `${fmt(c.parsed.y, 0)} veh/día·carril` } },
+        tooltip: {
+          callbacks: {
+            label: (c) => `${c.raw.year ?? ""}  ·  IMD ${fmt(c.parsed.x, 0)}  ·  ${cfg.label} ${fmt(c.parsed.y, 1)} ${cfg.unit}`,
+          },
+        },
       },
       scales: {
-        y: { beginAtZero: true, title: { display: true, text: "vehículos / día / carril" } },
+        x: { title: { display: true, text: "IMD (veh/día·carril)" } },
+        y: { title: { display: true, text: `${cfg.label} (${cfg.unit})` }, beginAtZero: true },
       },
     },
   });
 
-  const note = document.getElementById("trafficNote");
-  if (!values.some(v => v !== null && v !== undefined)) {
-    note.textContent = "No hay datos de tráfico publicados para este mes en los años seleccionados.";
-    return;
-  }
-  const curVal = monthRow[year];
-  const baseline = values.filter((v, i) => v !== null && yearsShown[i] < year);
-  const baselineMean = baseline.length ? baseline.reduce((a, b) => a + b, 0) / baseline.length : null;
-  if (curVal !== undefined && baselineMean !== null) {
-    const pct = ((curVal - baselineMean) / baselineMean) * 100;
-    note.textContent = `IMD de ${MONTHS_ES[month - 1]} ${year}: ${fmt(curVal, 0)} (${pct > 0 ? "+" : ""}${fmt(pct, 1)}% vs media de ${baseline.length} años anteriores).`;
-  } else {
-    note.textContent = `Última IMD disponible para ${MONTHS_ES[month - 1]}: ${state.traffic.years.at(-1)}.`;
-  }
+  return stats;
+}
+
+function renderCorrelation(year, month, stations) {
+  document.getElementById("corrMonthLabel").textContent = MONTHS_ES[month - 1];
+
+  const tbody = document.querySelector("#corrTable tbody");
+  tbody.innerHTML = "";
+
+  const pollutants = ["NO2", "PART", "PM25"];
+  const canvasMap = { NO2: "scatterNO2", PART: "scatterPART", PM25: "scatterPM25" };
+
+  pollutants.forEach(p => {
+    const cfg = POLLUTANTS[p];
+    const stats = drawScatter(canvasMap[p], p, month, stations, year);
+
+    const tr = document.createElement("tr");
+    if (!stats) {
+      tr.innerHTML = `
+        <td>${cfg.label}</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
+        <td>insuficientes datos</td>
+        <td>—</td>
+        <td class="num">—</td>`;
+    } else {
+      const strength = correlationStrength(stats.r);
+      const sign = stats.r >= 0 ? "positiva" : "negativa";
+      // Sensitivity: change in pollutant per +1000 IMD
+      const sensitivity = stats.slope * 1000;
+      const signS = sensitivity > 0 ? "+" : "";
+      tr.innerHTML = `
+        <td>${cfg.label}</td>
+        <td class="num">${stats.r.toFixed(2)}</td>
+        <td class="num">${(stats.r * stats.r).toFixed(2)}</td>
+        <td>${strength.label} ${sign}</td>
+        <td class="num">${signS}${fmt(sensitivity, 2)} ${cfg.unit} / +1000 veh</td>
+        <td class="num">${stats.n}</td>`;
+    }
+    tbody.appendChild(tr);
+  });
 }
 
 function renderSummary(year, month, stations) {
@@ -383,7 +479,7 @@ function renderSummary(year, month, stations) {
     }${overLimit ? ` <span style="color:var(--bad);font-weight:600">· supera el valor límite anual (${cfg.limit})</span>` : ""}.</li>`);
   });
 
-  // Traffic note in summary
+  // Traffic level + correlation read
   const monthKey = String(month).padStart(2, "0");
   const monthRow = state.traffic.monthly_imd[monthKey] || {};
   const curTr = monthRow[year];
@@ -396,6 +492,19 @@ function renderSummary(year, month, stations) {
     const pct = ((curTr - avg) / avg) * 100;
     lines.push(`<li><strong>Tráfico (IMD)</strong>: ${fmt(curTr, 0)} veh/día·carril, ${pct > 0 ? "+" : ""}${fmt(pct, 1)}% vs media ${baselineTr.length} años anteriores.</li>`);
   }
+
+  // Correlation — focus on NO2 (best traffic marker) plus partículas
+  ["NO2", "PART", "PM25"].forEach(p => {
+    const cfg = POLLUTANTS[p];
+    const pairs = buildCorrelationPairs(month, p, stations, year - WINDOW_YEARS, year);
+    const stats = pearson(pairs);
+    if (!stats) return;
+    const str = correlationStrength(stats.r);
+    const sign = stats.r >= 0 ? "positiva" : "negativa";
+    const sensitivity = stats.slope * 1000;
+    const sS = sensitivity > 0 ? "+" : "";
+    lines.push(`<li><strong>Tráfico ↔ ${cfg.label}</strong>: correlación ${str.label} ${sign} (r=${stats.r.toFixed(2)}, R²=${(stats.r * stats.r).toFixed(2)}). Cada +1000 veh/día·carril se asocia con ${sS}${fmt(sensitivity, 2)} ${cfg.unit} (n=${stats.n} años).</li>`);
+  });
 
   el.innerHTML = `<ul>${lines.join("")}</ul>`;
 }
@@ -414,7 +523,7 @@ function runReport() {
   drawPollutantChart("chartPART", "PART", month, year, stations);
   drawPollutantChart("chartPM25", "PM25", month, year, stations);
   renderTable(year, month);
-  renderTrafficChart(year, month);
+  renderCorrelation(year, month, stations);
   renderDataMeta();
 }
 

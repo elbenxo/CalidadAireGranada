@@ -109,12 +109,47 @@
   </section>
 
   <section class="traffic-block">
-    <h2>Cruce con tráfico</h2>
-    <p class="caption">Intensidad Media Diaria (IMD) por carril de circulación en Granada. Fuente: <a href="http://www.movilidadgranada.com/tra_datos.php" target="_blank" rel="noopener">CGIM</a>.</p>
-    <div class="chart-wrap wide">
-      <div class="canvas-holder"><canvas id="chartTraffic"></canvas></div>
+    <h2>¿El tráfico explica el aire?</h2>
+    <p class="caption">Correlación entre la IMD de <span id="corrMonthLabel">—</span> y la media mensual de cada contaminante, año a año, dentro de la ventana de 10 años. Un valor de <em>r</em> próximo a 1 indica que a más tráfico más contaminante; próximo a 0 indica que no hay relación en los datos. Fuente tráfico: <a href="http://www.movilidadgranada.com/tra_datos.php" target="_blank" rel="noopener">CGIM</a>.</p>
+
+    <div class="chart-grid" id="corrCharts">
+      <div class="chart-wrap">
+        <h3>IMD vs NO₂</h3>
+        <div class="canvas-holder"><canvas id="scatterNO2"></canvas></div>
+      </div>
+      <div class="chart-wrap">
+        <h3>IMD vs PM10</h3>
+        <div class="canvas-holder"><canvas id="scatterPART"></canvas></div>
+      </div>
+      <div class="chart-wrap">
+        <h3>IMD vs PM2.5</h3>
+        <div class="canvas-holder"><canvas id="scatterPM25"></canvas></div>
+      </div>
     </div>
-    <div id="trafficNote" class="caption"></div>
+
+    <div class="table-scroll">
+      <table id="corrTable" class="detail">
+        <thead>
+          <tr>
+            <th>Contaminante</th>
+            <th>r (Pearson)</th>
+            <th>R²</th>
+            <th>Fuerza</th>
+            <th>Sensibilidad</th>
+            <th>Años</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <p class="caption" id="corrCaveat">
+      Nota: con 10–11 observaciones por contaminante, la correlación es
+      <em>indicativa</em>, no concluyente. Las partículas (PM10/PM2.5) reciben aportes
+      no locales (intrusiones de polvo sahariano, calefacción, construcción) que pueden
+      enmascarar el efecto del tráfico. El NO₂, en cambio, es un buen marcador de
+      emisiones locales por combustión de motores.
+    </p>
   </section>
 
   <section id="methodology" class="method">
