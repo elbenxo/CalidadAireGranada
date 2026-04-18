@@ -7,13 +7,6 @@ on:
   workflow_dispatch:
   push:
     branches: [main, master, "claude/granada-air-quality-reports-514BB"]
-    paths:
-      - "index.html"
-      - "css/**"
-      - "js/**"
-      - "data/**"
-      - "scripts/**"
-      - ".github/workflows/scrape.yml"
 
 permissions:
   contents: write
