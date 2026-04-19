@@ -140,5 +140,5 @@ python3 -m http.server 8000
 - **Locale español** en números y meses tanto en scraper como en UI.
 - **Nuevos contaminantes / estaciones**: añadir a `SKILL.md`, al
   diccionario `POLLUTANTS` de `js/app.js` y a la lista del scraper.
-- **Rama activa de desarrollo**: `claude/granada-air-quality-reports-514BB`.
-  El workflow de Pages está configurado para redeploy en push a esa rama.
+- **Ramas**: `main` (estable / despliegue) y `develop` (integración).
+  El workflow de Pages redeploy en push a cualquiera de las dos.

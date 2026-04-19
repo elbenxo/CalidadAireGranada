@@ -6,7 +6,7 @@ on:
     - cron: "15 6 2 * *"
   workflow_dispatch:
   push:
-    branches: [main, master, "claude/granada-air-quality-reports-514BB"]
+    branches: [main, develop]
 
 permissions:
   contents: write
