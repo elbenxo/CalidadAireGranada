@@ -2,8 +2,8 @@ name: Monthly data refresh & deploy
 
 on:
   schedule:
-    # 06:15 UTC on the 2nd of each month (portal publishes the previous month).
-    - cron: "15 6 2 * *"
+    # 06:15 UTC on the 9th of each month (portal publishes the previous month).
+    - cron: "15 6 9 * *"
   workflow_dispatch:
   push:
     branches: [main, master, "claude/granada-air-quality-reports-514BB"]

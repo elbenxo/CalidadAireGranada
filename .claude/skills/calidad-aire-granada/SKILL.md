@@ -130,7 +130,7 @@ year closes.
 | `data/air.json` | Monthly means per (station, year, month, parameter). |
 | `data/traffic.json` | Monthly IMD per year, plus annual average. |
 | `index.html`, `css/`, `js/` | Static report UI served from GitHub Pages. |
-| `.github/workflows/scrape.yml` | Runs `scripts/scrape.py` on the 2nd of each month and commits new data. |
+| `.github/workflows/scrape.yml` | Runs `scripts/scrape.py` on the 9th of each month and commits new data. |
 
 ## 5. Running the scraper locally
 

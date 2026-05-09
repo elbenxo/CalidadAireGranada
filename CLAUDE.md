@@ -25,7 +25,7 @@ caída del tráfico y caída de contaminantes.
    de regresión) entre IMD mensual y media del contaminante, no solo
    gráficos decorativos.
 4. **Cero mantenimiento**: `GitHub Actions` refresca datos y redeploy
-   el día 2 de cada mes sin intervención.
+   el día 9 de cada mes sin intervención.
 5. **Sin backend**: solo hosting estático → `JSON` precomputado.
 
 ## 3. Fuentes de datos

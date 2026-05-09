@@ -15,7 +15,7 @@ Pensado para el Ayuntamiento de Granada. Publicado en GitHub Pages.
      Google Charts embebida) → `data/traffic.json`.
 2. `index.html` + `js/app.js` leen esos JSON estáticos y renderizan el
    informe. Sin backend, sin CORS, sin build-tools.
-3. `.github/workflows/scrape.yml` ejecuta el scraper el día 2 de cada mes
+3. `.github/workflows/scrape.yml` ejecuta el scraper el día 9 de cada mes
    y despliega la web actualizada en GitHub Pages.
 
 ## Stack
@@ -43,7 +43,7 @@ En el repositorio de GitHub:
 
 1. Settings → Pages → Source → **GitHub Actions**.
 2. El workflow `Monthly data refresh & deploy` desplegará automáticamente
-   tras cada push a la rama activa y el día 2 de cada mes.
+   tras cada push a la rama activa y el día 9 de cada mes.
 
 ## Detalles técnicos
 
