@@ -1,6 +1,6 @@
 {
   "meta": {
-    "scraped_at": "2026-09-02T11:12:14.579865Z",
+    "scraped_at": "2026-10-02T12:26:14.762175Z",
     "stations": [
       "NORTE",
       "CONGRESOS"
@@ -2000,6 +2000,24 @@
     },
     "CONGRESOS|2026|07|PM25": {
       "media": 16.97
+    },
+    "NORTE|2026|08|NO2": {
+      "media": 11.89
+    },
+    "NORTE|2026|08|PART": {
+      "media": 27.05
+    },
+    "NORTE|2026|08|PM25": {
+      "media": 9.44
+    },
+    "CONGRESOS|2026|08|NO2": {
+      "media": 11.75
+    },
+    "CONGRESOS|2026|08|PART": {
+      "media": 50.04
+    },
+    "CONGRESOS|2026|08|PM25": {
+      "media": 11.54
     }
   }
 }
